@@ -1,0 +1,3 @@
+def rolling_window_with_stride(x, w_size, s):
+    y = np.convolve(x, np.ones((w_size,)), mode='valid')[0::s]
+    return y
